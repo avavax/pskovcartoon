@@ -1,0 +1,45 @@
+.contacts {
+	position: relative;
+	height: 548px;
+	width: 100%;
+	&-text {
+		position: absolute;
+		top: 70px;
+		left: 20%;
+		background-color: #fff;
+		padding: 30px 30px 30px 60px;
+		max-width: 312px;
+		color: $text-color-dark;
+		&__title {
+			font-size: 24px;
+			font-weight: 700;
+			font-family: 'Roboto Bold', sans-serif;
+		}
+		&__subtitle {
+			position: relative;
+			font-size: 18px;
+			font-weight: 500;
+			font-family: 'Roboto Medium', sans-serif;
+			line-height: 18px;
+			margin-bottom: 7px;
+		}
+		&__desc {
+			font-size: 16px;
+			font-weight: 500;
+			font-family: 'Roboto Light', sans-serif;
+			line-height: 18px;
+		}
+		&__space {
+			margin-bottom: 30px;
+			&--small {
+				margin-bottom: 13px;
+			}
+		}
+	}
+}
+
+.fa {
+	position: absolute;
+	top: 0;
+	left: -35px;
+}

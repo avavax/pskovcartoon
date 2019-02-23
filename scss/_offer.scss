@@ -1,0 +1,33 @@
+.offer {
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 65px;
+	background: grey url(../img/offer/offer-bg.jpg) center no-repeat;
+	background-size: cover;	
+	font-family: 'Roboto Regular', sans-serif;
+	color: $text-color-light;
+	overflow-x: hidden;
+	&-title {
+		font-size: 32px;
+		line-height: 35px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 0;
+		&_span {
+			display: block;
+			font-size: 26px;
+			margin-bottom: 30px;
+		}		
+	}
+	&-form {
+		&__label {
+			font-family: 'Roboto Light', sans-serif;
+			font-size: 20px;
+			margin-bottom: 18px;
+			display: block;
+		}			
+	}
+
+}
+
+

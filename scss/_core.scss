@@ -1,0 +1,76 @@
+body {
+	font-family: 'Roboto Regular', sans-serif;
+	color: $text-color-dark;
+}
+
+.button {
+	font-family: 'Roboto Medium', sans-serif;
+	border: 1px solid transparent;
+	font-size: 15px;
+	color: $text-color-light;
+	background-color: $active-color;
+	padding: 13px 22px;
+	border-radius: 5px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	img {
+		vertical-align: middle;
+		margin-right: 7px;
+	}
+	&:hover {
+		background-color: darken($active-color, 20%);
+	}
+	&-o {
+		background-color: transparent;
+		color: $text-color-dark;
+		border: 1px solid $text-color-dark;
+		margin-right: 15px;
+		&:hover {
+			background-color: $active-color;
+			color: $text-color-light;
+			border: 1px solid transparent;
+		}	
+	}
+
+}
+
+.landing__subtitle {
+	font-size: 27px;
+	font-family: 'Roboto Bold', sans-serif;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	color: $text-color-dark;
+	&::after {
+		margin-top: 5px;
+		content: '';
+		background: url(../img/sbt_line_min.png) center no-repeat;
+		display: block;
+		height: 10px;
+	}
+}
+
+.dark-bg {
+	position: relative;
+	z-index: 2;
+	&::before {
+		position: absolute;
+		content: '';
+		display: block;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -1;
+	}
+}
+
+@mixin font-awesome($content){
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: $content;
+}

@@ -1,0 +1,105 @@
+.main {
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: #373737 url(../img/main/bg.jpg) center no-repeat;
+	background-size: cover;
+	background-color: transparent;
+	color: $text-color-light;
+	z-index: 1;
+	&::before {
+
+	}
+	&-img {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 390px;
+			height: 390px;
+			border: 2px solid white;
+			border-radius: 50%;
+			z-index: -1;
+			left: 50%;
+			margin-left: -195px;
+		}	
+	}
+	&-text {
+		&__title {
+			font-family: 'Roboto Bold', sans-serif;
+			font-size: 42px;
+			line-height: 42px;
+			margin-bottom: 20px;
+		}
+		&__subtitle {
+			font-size: 28px;
+			font-weight: 300;
+			margin-bottom: 20px;
+		}
+	}
+	&-form {
+		font-family: 'Roboto Light', sans-serif;
+		padding: 20px 30px 35px 30px;
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+}
+.form-title {
+	font-size: 20px;
+	line-height: 30px;
+	max-width: 430px;
+	margin-bottom: 20px;
+	font-weight: 300;
+	&__uppercase {
+		display: block;
+		font-family: 'Roboto Bold', sans-serif;
+		text-transform: uppercase;
+
+	}
+}
+.form {
+	&__input {
+		border: none;
+		font-size: 14px;
+		line-height: 42px;
+		font-family: 'Roboto Regular', sans-serif;
+		font-weight: 300;
+		margin-right: 10px;
+		border-radius: 5px;
+		padding: 0 20px;
+		width: 310px;
+		height: 56px;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	&-small {
+		font-family: 'Roboto Light', sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+	}
+}
+.btn-large {
+	min-height: 56px;
+	margin-bottom: 15px;
+}
+.slider-arrow {
+	position: absolute;
+	width: 22px;
+	height: 100%;
+	top: 0;
+	border: 1px solid $active-color;
+	z-index: 5;
+	&_left {
+		background: #fff url(../img/left-arrow-dark.png) center no-repeat;
+		left: 0;
+		&:hover {
+			background: $active-color url(../img/left-arrow-light.png) center no-repeat;
+		}
+	}
+	&_right {
+		background: #fff url(../img/right-arrow-dark.png) center no-repeat;
+		right: 0;
+		&:hover {
+			background: $active-color url(../img/right-arrow-light.png) center no-repeat;
+		}		
+	}
+}

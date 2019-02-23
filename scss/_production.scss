@@ -1,0 +1,41 @@
+.production {
+	padding-top: 90px;
+	padding-bottom: 65px;
+	&-slider__top {
+		height: 378px;
+		overflow: hidden;
+		margin-bottom: 15px;
+	}
+	&-slider__bottom {
+		position: relative;
+		height: 80px;
+		overflow: hidden;
+		padding-left: 30px;
+		padding-right: 30px;
+		img {
+			margin: 0 6px;
+		}
+	}
+	&-text {
+		padding-top: 20px;
+		font-family: 'Roboto Regular', sans-serif;
+		&__title {
+			font-size: 28px;
+			background-color: $active-color;
+			color: $text-color-light;
+			font-family: 'Roboto Regular', sans-serif;
+			margin-bottom: 25px;
+			padding-bottom: 17px;
+			padding-top: 17px;
+			margin-left: -30px;
+			padding-left: 30px;
+		}
+		&__desc {
+			font-family: 'Roboto Light', sans-serif;
+			color: $text-color-dark;
+			font-size: 16px;
+			line-height: 24px;
+			text-align: justify;
+		}
+	}
+}
